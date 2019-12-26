@@ -5,4 +5,3 @@ function Widget(initialProps) {
 }
 
 export default Widget;
-git a
