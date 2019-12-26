@@ -3,6 +3,14 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/user-event": "^7.1.2",
-    "react-app-polyfill": "^1.0.5"
+    "react-app-polyfill": "^1.0.5",
+    "cross-env": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-inline": "^0.1.3"
+  },
+  "scripts": {
+    "build:inline": "npm run build && gulp",
+    "start:https": "cross-env HTTPS=true react-scripts start"
   }
 }
