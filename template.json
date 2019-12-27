@@ -12,9 +12,5 @@
   "scripts": {
     "build:inline": "npm run build && gulp",
     "start:https": "cross-env HTTPS=true react-scripts start"
-  },
-  "browserslist": {
-    "production": ["ie 11", "safari 12", "chrome 78", "Edge 18"],
-    "development": ["ie 11", "safari 12", "chrome 78", "Edge 18"]
   }
 }
