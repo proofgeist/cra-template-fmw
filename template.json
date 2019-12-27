@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build:inline": "npm run build && gulp",
-    "start:https": "cross-env HTTPS=true react-scripts start"
+    "start:https": "cross-env HTTPS=true react-scripts start",
+    "firstRun": "node ./scripts/firstRun.js"
   }
 }

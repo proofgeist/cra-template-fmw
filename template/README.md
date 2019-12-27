@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and template that sets defaults that Geist Interactive uses.
 
+You will need to run `npm run firstRun` to complete the setup for iE 11.
+
 ## Available Scripts
 
 In the project directory, you can run:
