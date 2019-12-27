@@ -24,5 +24,5 @@ if (window.__initialProps__ !== "__PROPS__") {
 
   //comment this step to prevent loading with default props
   // once this is commented out, react won't even render until props are found.
-  BootWidget({ message: "Default props are loaded" });
+  BootWidget({ message: "Default props are loaded in index.js" });
 }
