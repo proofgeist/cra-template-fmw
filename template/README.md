@@ -1,6 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), and template that sets defaults that Geist Interactive uses.
 
-You will need to run `npm run firstRun` to complete the setup for iE 11.
+## Differences from Create React App
+
+- You will need to run `npm run firstRun` to complete the setup for iE 11.
+- after running `npm start` , launch the inlcuded FM file and run the Load The WebViewer Button.
+- Develop your Widget as regular react widget.
+- running `npm build:inline` will produce a compiled production windget as a single file. copy and paste the contents of that file into your solution to use as your production Source
 
 ## Available Scripts
 

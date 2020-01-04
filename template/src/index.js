@@ -18,11 +18,13 @@ if (window.__initialProps__ !== "__PROPS__") {
 } else {
   // we haven't merged so install loadInitialProps method for FM to use
   window.loadInitialProps = function(props) {
+    try {
+      props = JSON.parse(props);
+    } catch (error) {}
     // boot the widget with those props
     BootWidget(props);
   };
 
-  //comment this step to prevent loading with default props
-  // once this is commented out, react won't even render until props are found.
-  BootWidget({ message: "Default props are loaded in index.js" });
+  //uncomment this step and load default props from here if you need to run or debug in a browser
+  //BootWidget({ message: "Default props are loaded in index.js" });
 }
