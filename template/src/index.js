@@ -26,5 +26,5 @@ if (window.__initialProps__ !== "__PROPS__") {
   };
 
   //uncomment this step and load default props from here if you need to run or debug in a browser
-  BootWidget({ message: "Default props are loaded in index.js" });
+  //BootWidget({ message: "Default props are loaded in index.js" });
 }
