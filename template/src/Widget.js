@@ -1,20 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import FMScriptButton from "./components/FMScriptButton";
+import { useFMPerformJS, useFMScript } from "fmw-react-hooks";
 
 function Widget(initialProps) {
-  const [messageColor, changeMessageColor] = useState("blue");
+  const messageColor = useFMPerformJS("blue", "changeColor");
+  const { data } = useFMScript("getvalue", null);
   const style = { color: messageColor };
-
-  // this function will be exposed to FileMaker
-  function changeColor(newColor) {
-    changeMessageColor(newColor);
-  }
-
-  // by convention we expose this through a nameSpace based on
-  // the name of the component that is exposing the function
-  // in this case "Widget"
-  // in FileMaker we call this by calling the function 'Widget.changeColor'
-  window.Widget = { changeColor };
 
   return (
     <>
@@ -25,6 +16,8 @@ function Widget(initialProps) {
       >
         Run a FileMaker Script
       </FMScriptButton>
+      <hr />
+      {data}
     </>
   );
 }
