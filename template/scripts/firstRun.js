@@ -12,5 +12,5 @@ pkgjson.browserslist = browserlist;
 
 fs.writeFileSync("./package.json", JSON.stringify(pkgjson, null, "  "));
 fs.unlinkSync("./scripts/firstRun.js");
-fs.rmdirSync("./scripts");
+//fs.rmdirSync("./scripts");
 console.log("First Run Complete");

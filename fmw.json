@@ -1,0 +1,7 @@
+{
+  "file": "AddonName.fmp12",
+  "server": "the.fmserver.com",
+  "uploadScript": "AddonUpdateHTML",
+  "user": "<user>",
+  "pass": "<password>"
+}
