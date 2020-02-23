@@ -6,7 +6,7 @@
       "@testing-library/user-event": "^7.1.2",
       "react-app-polyfill": "^1.0.5",
       "fmw-react-hooks": "^0.2.0",
-      "fmw-utils": "^1.2.0",
+      "fmw-utils": "^1.1.2",
       "cross-env": "^6.0.3",
       "gulp": "^4.0.2",
       "gulp-cli": "^2.2.0",
