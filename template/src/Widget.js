@@ -1,9 +1,10 @@
 import React from "react";
 import FMScriptButton from "./components/FMScriptButton";
 import { useFMPerformJS, useFMFindScript } from "fmw-react-hooks";
+import { fmCallScript } from "fmw-utils";
 
 function Widget(initialProps) {
-  const messageColor = useFMPerformJS("blue", "changeColor");
+  const messageColor = useFMPerformJS("green", "changeColor");
 
   const { data, error } = useFMFindScript("AddonNameFind", {
     layouts: "AddonSampleData",
@@ -20,7 +21,7 @@ function Widget(initialProps) {
   return (
     <>
       <h1>Test Addon</h1>
-      <p style={style}>{initialProps.message}</p>
+      <p style={style}>{initialProps.Other.message}</p>
       <FMScriptButton
         scriptName="AddonNameHandleOnClick"
         scriptParameter="Hi! I am from the web viewer"
@@ -29,10 +30,23 @@ function Widget(initialProps) {
       </FMScriptButton>
       <hr />
       <h2>Fetched From FileMaker</h2>
+      <div>click the links below to show a card window</div>
       <ul>
         {data.map(record => {
-          const name = record.fieldData.Name;
-          return <li key={name}>{name}</li>;
+          const { Name, PrimaryKey } = record.fieldData;
+          return (
+            <li key={Name}>
+              <a
+                href=""
+                onClick={e => {
+                  e.preventDefault();
+                  fmCallScript("AddonShowDetail", { PrimaryKey });
+                }}
+              >
+                {Name}
+              </a>
+            </li>
+          );
         })}
       </ul>
     </>
