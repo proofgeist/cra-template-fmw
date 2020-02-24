@@ -1,15 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import FMScriptButton from "./components/FMScriptButton";
-import { useFMPerformJS, useFMFindScript } from "fmw-react-hooks";
 import { fmCallScript } from "fmw-utils";
+import { useFindRecords } from "./customHooks";
 
 function Widget(initialProps) {
-  const messageColor = useFMPerformJS("green", "changeColor");
-
-  const { data, error } = useFMFindScript("AddonNameFind", {
-    layouts: "AddonSampleData",
-    query: [{ PrimaryKey: "*" }]
-  });
+  const [messageColor, setMessageColor] = useState("green");
+  window.changeColor = color => setMessageColor(color); //allows FM To set color
+  const { data, error } = useFindRecords("*"); // find all records
 
   if (error) {
     console.error(error);
