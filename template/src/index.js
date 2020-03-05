@@ -4,7 +4,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { init } from "fmw-utils";
 
+import './themed-bootstrap.css'
 import "./index.css";
+
 import Widget from "./Widget";
 
 function BootWidget(props) {

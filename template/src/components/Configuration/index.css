@@ -1,0 +1,40 @@
+.form-control:focus {
+  border-color: #0091ce;
+  box-shadow: none;
+}
+
+.form-control-sm {
+  height: 26px;
+}
+div.form-group {
+  margin-bottom: 0.3rem;
+}
+div.form-group small {
+  margin-top: 0;
+}
+div.form-group label {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: #5b5b5b;
+  font-size: 12px;
+}
+div.invalid-feedback {
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.form-group span.schema {
+  margin-bottom: 0px;
+  padding-top: 5px;
+  color: #7e7e7e;
+  font-size: 12px;
+}
+
+span.config-headers {
+  color: #0091ce;
+  font-weight: 500;
+}
+span.config-headers-lg {
+  font-size: larger;
+}
