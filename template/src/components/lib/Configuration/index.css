@@ -23,6 +23,12 @@ div.invalid-feedback {
   padding-top: 0px;
   margin-bottom: 0px;
 }
+div.checkbox-label {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: #5b5b5b;
+  font-size: 12px;
+}
 
 div.form-group span.schema {
   margin-bottom: 0px;
@@ -31,10 +37,18 @@ div.form-group span.schema {
   font-size: 12px;
 }
 
+.form-check-input {
+  margin-top: 0.4rem;
+}
+
 span.config-headers {
   color: #0091ce;
   font-weight: 500;
 }
 span.config-headers-lg {
   font-size: larger;
+}
+div.scrollableRighthand {
+  height: 100%;
+  overflow: auto;
 }

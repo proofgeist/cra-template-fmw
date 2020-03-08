@@ -39,13 +39,40 @@ export default function Control(props) {
         >
           <option value="">select...</option>
           {opts.map(o => {
-            return <option key={o}>{o}</option>;
+            return (
+              <option value={o} key={o}>
+                {o}
+              </option>
+            );
           })}
         </Input>
         <FormText>{props.help}</FormText>
         <FormFeedback invalid>{error}</FormFeedback>
       </FormGroup>
     );
+  } else {
+    let error = props.errors ? props.errors[props.name] : null;
+    if (error && error.message) {
+      error = error.message;
+    }
+    return (
+      <FormGroup check>
+        <div style={{ height: "10px" }} />
+        <div className="checkbox-label">Read only</div>
+        <Label check>
+          <Input
+            invalid={error ? true : false}
+            onClick={props.onChange}
+            innerRef={props.register}
+            type="checkbox"
+            name={props.name}
+            id={props.name}
+          />{" "}
+          <FormText>{props.label}</FormText>
+        </Label>
+        <FormText>{props.help}</FormText>
+        <FormFeedback invalid>{error}</FormFeedback>
+      </FormGroup>
+    );
   }
-  return "whoops"; // I am not using anything but selects in this one. :-(
 }

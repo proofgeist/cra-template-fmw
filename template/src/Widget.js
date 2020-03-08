@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import defaultConfig from "./configuration.json";
 import Addon from "./components/Addon";
-import Configurator from "./components/Configuration";
+import Configurator from "./components/Configurator";
 
 function Widget(initialProps) {
   const Config = initialProps.Config;
