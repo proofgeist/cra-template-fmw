@@ -78,6 +78,12 @@ export default function Configurator(props) {
     await fmFetch(SAVE_CONFIG_SCRIPT, config);
   };
 
+  useEffect(() => {
+    const htmlEl = document.querySelector("html");
+    htmlEl.style.overflow = "hidden";
+    const body = document.querySelector("body");
+    body.style.overflow = "hidden";
+  }, []);
   //const cb = useCallback(scanSchema);
   useEffect(() => {
     scanSchema();
