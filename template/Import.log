@@ -39,3 +39,6 @@
 2020-03-19 07:23:02.334 -0700	AddonNameSaveConfig::55::Perform Script	104	Script “<unknown>” missing.
 2020-03-19 07:23:02.334 -0700	AddonNameSaveConfig	0	script steps imported : 3
 2020-03-19 07:23:02.334 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 10:36:35.291 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 10:36:35.296 -0700	AddonName Change Color	0	script steps imported : 2
+2020-03-19 10:36:35.296 -0700	AddonName.fmp12	0	Import completed
