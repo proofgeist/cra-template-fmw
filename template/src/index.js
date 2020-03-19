@@ -9,8 +9,15 @@ import "./index.css";
 
 import Widget from "./Widget";
 
+//
 function BootWidget(props) {
   ReactDOM.render(<Widget {...props} />, document.getElementById("root"));
 }
 
-init(BootWidget);
+// this is triggered by the body onload event
+window.fmwInit = function fmwInit() {
+  // init loads the props that have been merged in
+  // and the calls BootWidget
+  // this helps widgets only load after they have props
+  init(BootWidget);
+}

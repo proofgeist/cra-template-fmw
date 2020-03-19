@@ -2,3 +2,40 @@
 2020-03-10 11:13:32.920 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
 2020-03-10 11:13:32.921 -0700	AddonNameSaveConfig	0	script steps imported : 3
 2020-03-10 11:13:32.921 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:12:25.972 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:12:25.973 -0700	AddonName Show Configurator	0	script steps imported : 5
+2020-03-19 07:12:25.973 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:12:49.987 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:12:49.989 -0700	AddonName Show Configurator::18::New Window	105	Layout “FCCalendar Config” missing.
+2020-03-19 07:12:49.992 -0700	AddonName Show Configurator::22::Perform Script	104	Script “FCCalendar Get WebViewer Object Name” missing.
+2020-03-19 07:12:49.993 -0700	AddonName Show Configurator::28::Set Variable	106	Table referred to in the calculation “Let([AddonUUID = FCCalendarAddon::CurrentAddonUUID;Config = FCCalendarConfig ( AddonUUID );initialProps = JSONSetElement ("";      ["Config"; Config; JSONObject];      ["AddonUUID"; AddonUUID; JSONString];      ["ShowConfig"; True; JSONBoolean];         // ---Optional---      ["Meta.System.Appearance" ; Get(SystemAppearance) ; JSONString];      ["Meta.System.Platform" ; Get(SystemPlatform) ; JSONString];      ["Meta.Application.Version" ; Get(ApplicationVersion) ; JSONString];      ["Meta.Application.Language" ; Get(ApplicationLanguage) ; JSONString];      ["Other.message"; "I am an initialProp" ; JSONString]    )];initialProps )” is missing.
+2020-03-19 07:12:49.993 -0700	AddonName Show Configurator::29::Set Variable	1208	Function referred to in the calculation “FCCalendarDataURL ( $initialProps )” is missing.
+2020-03-19 07:12:49.994 -0700	AddonName Show Configurator	0	script steps imported : 21
+2020-03-19 07:12:49.994 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:13:00.393 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:13:00.394 -0700	AddonName Show Configurator::18::Set Field	102	Field “OriginalTable” missing.
+2020-03-19 07:13:00.394 -0700	AddonName Show Configurator::19::Set Field	102	Field “OriginalLayout” missing.
+2020-03-19 07:13:00.395 -0700	AddonName Show Configurator::20::Set Field	102	Field “CurrentAddonUUID” missing.
+2020-03-19 07:13:00.395 -0700	AddonName Show Configurator	0	script steps imported : 4
+2020-03-19 07:13:00.395 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:13:17.899 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:13:17.900 -0700	AddonName Show Configurator::25::New Window	105	Layout “FCCalendar Config” missing.
+2020-03-19 07:13:17.901 -0700	AddonName Show Configurator::29::Perform Script	104	Script “FCCalendar Get WebViewer Object Name” missing.
+2020-03-19 07:13:17.902 -0700	AddonName Show Configurator::35::Set Variable	106	Table referred to in the calculation “Let([AddonUUID = FCCalendarAddon::CurrentAddonUUID;Config = FCCalendarConfig ( AddonUUID );initialProps = JSONSetElement ("";      ["Config"; Config; JSONObject];      ["AddonUUID"; AddonUUID; JSONString];      ["ShowConfig"; True; JSONBoolean];         // ---Optional---      ["Meta.System.Appearance" ; Get(SystemAppearance) ; JSONString];      ["Meta.System.Platform" ; Get(SystemPlatform) ; JSONString];      ["Meta.Application.Version" ; Get(ApplicationVersion) ; JSONString];      ["Meta.Application.Language" ; Get(ApplicationLanguage) ; JSONString];      ["Other.message"; "I am an initialProp" ; JSONString]    )];initialProps )” is missing.
+2020-03-19 07:13:17.902 -0700	AddonName Show Configurator::36::Set Variable	1208	Function referred to in the calculation “FCCalendarDataURL ( $initialProps )” is missing.
+2020-03-19 07:13:17.903 -0700	AddonName Show Configurator	0	script steps imported : 21
+2020-03-19 07:13:17.903 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:17:34.021 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:17:34.025 -0700	AddonNameSchema	0	script steps imported : 5
+2020-03-19 07:17:34.025 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:20:31.736 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:20:31.737 -0700	AddonNameSaveConfig	0	script steps imported : 3
+2020-03-19 07:20:31.737 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:22:22.272 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:22:22.273 -0700	AddonNameSaveConfig::45::Perform Script	104	Script “FCCalendar Get WebViewer Object Name” missing.
+2020-03-19 07:22:22.273 -0700	AddonNameSaveConfig	0	script steps imported : 3
+2020-03-19 07:22:22.273 -0700	AddonName.fmp12	0	Import completed
+2020-03-19 07:23:02.333 -0700	AddonName.fmp12	0	Import of script steps from clipboard started
+2020-03-19 07:23:02.334 -0700	AddonNameSaveConfig::55::Perform Script	104	Script “<unknown>” missing.
+2020-03-19 07:23:02.334 -0700	AddonNameSaveConfig	0	script steps imported : 3
+2020-03-19 07:23:02.334 -0700	AddonName.fmp12	0	Import completed
