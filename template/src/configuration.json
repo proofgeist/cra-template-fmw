@@ -1,48 +1,39 @@
 {
   "DisplayLayout": {
-    "category": "Required",
     "help": "Select the layout you want to use to gather your records",
     "label": "Display Layout",
+    "rightLabel": "Layout",
     "type": "select",
     "options": [""],
     "value": "",
     "reScanOnChange": true,
-    "required": true,
-    "fmSchema": { "type": "Layout" },
-    "rightLabel": "Layout"
+    "required": true
   },
   "PrimaryKeyField": {
-    "category": "Required",
     "help": "The is the unique primary key of the the table you are using",
     "label": "Primary Key",
+    "rightLabel": "Text or Number Field",
     "type": "select",
     "options": [""],
     "value": "",
-    "required": true,
-    "fmSchema": { "type": "Field" },
-    "rightLabel": "Text or Number Field"
+    "required": true
   },
   "NameField": {
-    "category": "Required",
     "help": "The name you want to display in the link",
     "label": "Person Name Field",
     "type": "select",
     "options": [""],
     "value": "",
-
     "required": true,
-    "fmSchema": { "type": "Field" },
     "rightLabel": "Text Field"
   },
 
   "ListStyle": {
-    "category": "Not Required",
     "help": "The name you want to display in the link",
     "label": "Style",
     "type": "select",
     "options": ["blue", "green", "pink"],
     "value": "",
-    "required": false,
-    "rightLabel": ""
+    "required": false
   }
 }

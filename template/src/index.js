@@ -4,20 +4,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { init } from "fmw-utils";
 
-import './themed-bootstrap.css'
+import "./themed-bootstrap.css";
 import "./index.css";
 
 import Widget from "./Widget";
 
-//
 function BootWidget(props) {
   ReactDOM.render(<Widget {...props} />, document.getElementById("root"));
 }
 
-// this is triggered by the body onload event
+window.onWebdInternalRefresh = () => {
+  // this will only run on WebDirect when webD refreshes, like when window resizing or returning to layout (should be a bug)
+  // so we reboot the whole widget when this happens
+  // the widget itself will look for cached values to restore
+  init(BootWidget, null, true);
+};
+
+//this function is run via the body's onload attribute
+//<body onload="fmwInit()">
 window.fmwInit = function fmwInit() {
-  // init loads the props that have been merged in
-  // and the calls BootWidget
-  // this helps widgets only load after they have props
+  //On Web Direct this only runs on first load. Even returning to a layout that has been loaded doesn't run this
   init(BootWidget);
-}
+};

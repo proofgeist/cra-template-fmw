@@ -13,12 +13,14 @@ import {
 } from "reactstrap";
 import { fmCallScript } from "fmw-utils";
 import { SAVE_CONFIG_SCRIPT } from "../../../constants";
+import pkg from "../../../../package.json";
 
 export function buildDefaults(Config) {
   const obj = {};
   Object.keys(Config).forEach(c => {
     obj[c] = Config[c].value;
   });
+
   return obj;
 }
 
@@ -107,11 +109,17 @@ export function ConfigContent({ xs = 8, children }) {
 
 export function ConfigMenu({ children }) {
   return (
-    <Col style={{ height: "100%", paddingBottom: "5px" }} xs={4}>
+    <Col style={{ height: "100vh", paddingBottom: "5px" }} xs={4}>
       <h4 style={{ paddingTop: "5px" }}>Settings</h4>
       <Nav vertical pills>
         {children}
       </Nav>
+      <span
+        className="text-muted"
+        style={{ fontSize: "smaller", position: "absolute", bottom: "60px" }}
+      >
+        v{pkg.version}
+      </span>
     </Col>
   );
 }

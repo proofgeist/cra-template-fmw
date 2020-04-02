@@ -1,0 +1,33 @@
+{
+  "RequiredMenu": {
+    "MenuLabel": "Required",
+    "PageTitle": "Required Options",
+    "Fields": {
+      "DisplayLayout": {
+        "help": "Select the layout you want to use to gather your records",
+        "label": "Display Layout",
+        "rightLabel": "Layout"
+      },
+      "PrimaryKeyField": {
+        "help": "The is the unique primary key of the the table you are using",
+        "label": "Primary Key",
+        "rightLabel": "Text or Number Field"
+      },
+      "NameField": {
+        "help": "The name you want to display in the link",
+        "label": "Person Name Field",
+        "rightLabel": "Text Field"
+      }
+    }
+  },
+  "OtherMenu": {
+    "MenuLabel": "Other Settings",
+    "PageTitle": "Other Settings",
+    "Fields": {
+      "ListStyle": {
+        "help": "The color of something",
+        "label": "Color Style"
+      }
+    }
+  }
+}

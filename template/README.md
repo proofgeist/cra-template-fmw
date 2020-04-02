@@ -7,7 +7,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Develop your Widget as regular react widget.
 - running `npm build:inline` will produce a compiled production windget as a single file. copy and paste the contents of that file into your solution to use as your production Source
 
-Everything else has normal create react app work flow
+## FileMaker File AddonName.fmp12
+
+This file contains all the FileMaker code you are likely to need to get started. You'll want to change it's name to
+The name of your Addon. You'll also want to names space all the, Layouts, Scripts, Custom Fuctions, ValueLists and Tables.
+
+Put it up on your FileMaker Server, put the connection info in the fmw.json file
+
+## fmw.json
+
+This file is used for automating communication with the served FileMaker File.
 
 ## Available Scripts
 
@@ -41,8 +50,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 Builds the app for production to the `build` folder, and then inlines it<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### `npm run openfile`
+
+if fmw.json is setup ths will open the file on the FileMaker server
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
@@ -61,10 +71,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
 ### Analyzing the Bundle Size
 

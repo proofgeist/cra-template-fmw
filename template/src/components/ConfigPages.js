@@ -7,7 +7,7 @@ import {
   ConfigContent,
   MiniPage,
   Control
-} from "./lib/Configuration";
+} from "./lib/Configurator/ConfigWrapper";
 
 export default function({ menuProps, currentNav, proper }) {
   return (
